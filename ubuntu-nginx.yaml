@@ -1,0 +1,55 @@
+
+
+Parameters:
+
+InstanceTypeParameter:
+
+Sort: String
+
+Default: t2.micro
+
+AllowedValues:
+
+- t2.micro
+
+- m1.small
+
+- m1.large
+
+Depiction: Enter t2.micro, m1.small, or m1.large. Default is t2.micro.
+
+Ec2Instance:
+
+Sort: AWS::EC2::Instance
+
+Properties:
+
+InstanceType:
+
+Ref: InstanceTypeParameter
+
+ImageId: ami-0fc20dd1da406780b
+
+Parameters:
+
+ParameterLogicalID:
+
+Sort: DataType
+
+ParameterProperty: esteem
+
+Properties
+
+AllowedPattern
+
+A normal articulation that speaks to the examples to take into account String composes.
+
+Required: No
+
+AllowedValues
+
+An exhibit containing the rundown of qualities took into account the parameter.
+
+Required: No
+
+ConstraintDescription:
